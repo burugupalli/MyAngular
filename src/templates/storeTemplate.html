@@ -1,0 +1,34 @@
+    <div  class = "items" ng-repeat ="item in items | orderBy:sortClass | filter:searchText">
+        <div>
+            <img class = "product-image" ng-src="{{item.imgSrc}}">
+        </div>
+        <div class = "item-shortDesc">{{item.shortDesc}}</div>
+        <div ng-class = "itemClass(item)">{{item.price|currency}}</div>
+        <div class = "item-price" ng-show ='item.discount'>{{item.discountPrice|currency}}</div>
+        </br>
+        <div class = "item-likes">
+            <img ng-click = "incrementLikes(item)" src="images/Thumbs-up.jpg" alt = "likes" style="width:20px; height:20px">
+            <div>{{item.likes}}</div>
+        </div>
+        <div class = "item-dislikes">
+            <img ng-click = "decrementLikes(item)" src="images/thumbs_down.png" alt = "dislikes" style="width:20px; height:20px">
+            <div>{{item.dislikes}}</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 18, 2016, 9:47:37 AM
+    Author     : VenkataSrinivas
+*/
+.product-image{
+    width:300px;
+    height: 400px;
+}
+.items{
+    display: inline-block;
+    padding :15px;
+}
+.item-shortDesc{
+    width:180px;
+    display: inline;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    float:left;
+    font-size:18px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.item-price{
+    float:left;
+    width:100px;
+    margin-left: 60px;
+    font-size: 20px;
+    font-style: italic;
+    font-weight:bold;
+    color: blue;
+}
+
+.item-likes, .item-dislikes{
+    float:left;
+    }
+    
+    .item-likes div, .item-dislikes div{
+        float:right;
+        margin-left:5px;
+        margin-right: 5px;
+        font-style: italic;
+        font-weight: bold;
+        font-size:20px;
+    }
+    
+    .sortItem{
+        display:inline;
+    }
+    
+    .item-disprice{
+        text-decoration: line-through;
+        font-size: 20px;
+        font-style: italic;
+        color: red;
+        font-weight: bold;
+        width:60px;
+        display: inline;
+        position:relative;
+        left:-165px;
+    }

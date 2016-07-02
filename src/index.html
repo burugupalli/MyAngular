@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MY SHOPPING CART</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src ="js/libs/angular.js/angular.js"></script>
+        <script src="js/scripts/myApp.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body ng-app="myApp">
+        <div ng-controller="storeController">
+            Sort By:<button ng-click="setSortColumn('price')">price</button>
+            <button ng-click="setSortColumn('likes')">Relevance</button>
+<!--            <button ng-click="addSrvc(2, 3)">Add</button>
+            {{output}}-->
+            <div class = "sortItem">
+               <select class="sortItem" ng-model="sortClass">
+                    <option value ="shortDesc">Description</option>
+                    <option value ="likes">Relevance</option>
+                    <option value ="-price">price</option>
+                </select>
+            </div>
+            <input type='text' placeholder="search..." ng-model='searchText'>
+            <div ng-include="'templates/storeTemplate.html'"></div>
+        </div>
+    </body>
+</html>
